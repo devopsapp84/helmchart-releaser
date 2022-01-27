@@ -1,0 +1,21 @@
+apiVersion: v1
+entries:
+  app01:
+  - apiVersion: v2
+    created: "2022-01-27T11:41:12.660538445Z"
+    description: A Helm chart for Kubernetes
+    digest: 4709bfab46f814a59a725d7295b0db60b589280042220d947b4202edd06af720
+    name: app01
+    urls:
+    - https://github.com/devopsapp84/helmchart-releaser/releases/download/app01-0.0.1/app01-0.0.1.tgz
+    version: 0.0.1
+  app02:
+  - apiVersion: v2
+    created: "2022-01-27T11:41:12.81611485Z"
+    description: A Helm chart for Kubernetes
+    digest: 7ab045639b8d348843dc9bef5acca8c0a92ce3e2146b83f28a8fa4e15dd26b6c
+    name: app02
+    urls:
+    - https://github.com/devopsapp84/helmchart-releaser/releases/download/app02-0.0.1/app02-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-01-27T11:41:12.515294417Z"
