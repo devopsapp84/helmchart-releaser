@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+## Usage
 
-You can use the [editor on GitHub](https://github.com/devopsapp84/helmchart-releaser/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+[Helm](https://helm.sh) must be installed to use the charts.  Please refer to
+Helm's [documentation](https://helm.sh/docs) to get started.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Once Helm has been set up correctly, add the repo as follows:
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+  helm repo add devopsapp84 https://devopsapp84.github.io/helmchart-releaser
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+If you had already added this repo earlier, run `helm repo update` to retrieve
+the latest versions of the packages. You can then run `helm search repo
+test` to see the charts.
 
-### Jekyll Themes
+To install the app01 chart:
+```
+    helm install app01 devopsapp84/app01
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/devopsapp84/helmchart-releaser/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+To uninstall the chart:
+```
+    helm delete app01
+```
 
-### Support or Contact
+To install the app02 chart:
+```
+    helm install app02 devopsapp84/app02
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+To uninstall the chart:
+```
+    helm delete app02
+```
