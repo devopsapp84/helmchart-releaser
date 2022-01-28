@@ -33,7 +33,7 @@ securityContext: {}
 
 service:
   type: LoadBalancer
-  port: 1020
+  port: 1010
 
 ingress:
   enabled: false
