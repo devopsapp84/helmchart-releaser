@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   pullPolicy: IfNotPresent
   hub: ghcr.io
-  repository: devopsapp84/helm-chart-releaser/app01
+  repository: devopsapp84/helmchart-releaser/app01
   tag: latest
 imagePullSecrets: []
 nameOverride: ""
